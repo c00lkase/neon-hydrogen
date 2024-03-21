@@ -7,7 +7,7 @@
 // @match        https://neal.fun/infinite-craft/*
 // @icon         https://i.imgur.com/9wzoOH4.png
 // @grant        none
-// @license GPL2
+// @license      GPL2
 // ==/UserScript==
 
 class Toast
