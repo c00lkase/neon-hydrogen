@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Neon Hydrogen
 // @namespace    N/A
-// @version      1.0.0
+// @version      1.0.5
 // @description  A modification for Infinite Craft that adds neon-looking elements. Based on the Hydrogen theme by LofiHD.
 // @author       coolkase
 // @match        https://neal.fun/infinite-craft/*
