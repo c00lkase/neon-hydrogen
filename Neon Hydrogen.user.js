@@ -7,6 +7,7 @@
 // @match        https://neal.fun/infinite-craft/*
 // @icon         https://i.imgur.com/9wzoOH4.png
 // @grant        none
+// @license GPL2
 // ==/UserScript==
 
 class Toast
@@ -183,6 +184,7 @@ const themes = {
             background-color: #070C10 !important;
             align-items: center !important;
             display: ruby-text !important;
+            z-index: 501 !important;
         }
 
         .reset
@@ -201,6 +203,7 @@ const themes = {
             transition: border-radius 400ms ease-in-out, background 400ms ease-in-out, scale 200ms ease-in-out, backdrop-filter 400ms ease-in-out !important;
             border: 2px solid #6e1717 !important;
             font-family: Tilt Neon, sans-serif;
+             z-index: 501 !important;
         }
 
         .item-discovered
@@ -275,9 +278,9 @@ const themes = {
             font-family: Tilt Neon, sans-serif !important;
             background-color: #020508 !important;
             color: white !important;
-            -webkit-box-shadow: 0px 0px 48px 6px rgba(0,187,0.5) !important;
-            -moz-box-shadow: 0px 0px 48px 6px rgba(0,187,0,0.5) !important;
-            box-shadow: 0px 0px 48px 6px rgba(0,187,0,0.5) !important;
+            -webkit-box-shadow: 0px 0px 48px 6px rgba(0,187,0.33) !important;
+            -moz-box-shadow: 0px 0px 48px 6px rgba(0,187,0,0.33) !important;
+            box-shadow: 0px 0px 48px 6px rgba(0,187,0,0.33) !important;
         }
 
         div .sidebar-input {
@@ -358,7 +361,7 @@ const themes = {
         }
 
         .logo, .version {
-            z-index: 1000;
+            z-index: 500;
         }
 
         .sidebar
@@ -404,11 +407,11 @@ const themes = {
             -webkit-box-shadow: 0px 0px 48px 6px rgba(0,0,187,0.5) !important;
             -moz-box-shadow: 0px 0px 48px 6px rgba(0,0,187,0.5) !important;
             box-shadow: 0px 0px 48px 6px rgba(0,0,187,0.5) !important;
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
         }
 
         .setting
         {
-            z-index: 200 !important;
             text-align: left !important;
             display: block !important;
             border-color: #00c !important;
@@ -433,7 +436,8 @@ const themes = {
             -moz-box-shadow: 0px 0px 48px 6px rgba(0,0,0,0.75) !important;
             box-shadow: 0px 0px 48px 6px rgba(0,0,0,0.75) !important;
             border-color: #800000 !important;
-            overflow: hidden;
+             z-index: -500;
+            /* overflow: hidden; */
         }
 
         .container.dark-mode {
