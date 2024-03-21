@@ -203,7 +203,6 @@ const themes = {
             transition: border-radius 400ms ease-in-out, background 400ms ease-in-out, scale 200ms ease-in-out, backdrop-filter 400ms ease-in-out !important;
             border: 2px solid #6e1717 !important;
             font-family: Tilt Neon, sans-serif;
-             z-index: 501 !important;
         }
 
         .item-discovered
